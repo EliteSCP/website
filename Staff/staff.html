@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <head>
-  <title>Elite Community</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Staff - Elite Community</title>
+  <link rel="stylesheet" href="../style.css">
   <meta charset="UTF-8">
-  <link rel="background" href="img/backgound.png" type="image/png">
+  <link rel="background" href="../img/backgound.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="shortcut icon" href="img/icon.png">
-  <script src="script.js"></script>
+  <link rel="shortcut icon" href="../img/icon.png">
+  <script src="../script.js"></script>
 
   <style>
     white {color: white;}
@@ -18,13 +18,12 @@
 </head>
 
 <body>
-  <img src="img/backgound.png" id="background" height="1080x1020">
   <div id="navBar">
     <div id="menu">
-      <div class="menuTab" id="selectedMenuTab" onclick="openUrl('./index.html', '_self')">HOME</div>
+      <div class="menuTab" onclick="openUrl('./index.html', '_self')">HOME</div>
       <div class="menuTab" onclick="openUrl('https:\/\/discord.elitecommunity.it/', '_blank')">DISCORD</div>
-      <div class="menuTab" onclick="openUrl('./SCP SL/sl.html', '_self')">SCP: SECRET LABORATORY</div>
-      <div class="menuTab" onclick="openUrl('./Staff/staff.html', '_self')">STAFF</div>
+      <div class="menuTab">SCP: SECRET LABORATORY</div>
+      <div class="menuTab" id="selectedMenuTab" onclick="openUrl('../Staff/staff.html', '_self')">STAFF</div>
       <div class="menuTab">INFORMAZIONI</div>
     </div>
   </div>
@@ -39,5 +38,8 @@
       &nbsp;
     </div>
     <div class="button" onclick="openUrl('https:\/\/discord.elitecommunity.it/', '_blank')">ACCEDI AL NOSTRO DISCORD!</div>
+    <div id="pagina">
+    <div id="title" style="color: red">ELITE COMMUNITY</div>
+    
   </div>
 </body>
