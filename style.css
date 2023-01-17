@@ -193,6 +193,48 @@ ul.a {
   color:#ffffff;
   font-size:25px;
 }
+#intestazione-scpsl-infoplugin{
+  position: absolute;
+  z-index: 0;
+  top:400px;
+  left:130px;
+}
+#title-scpsl-infoplugin{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color:#c50000;
+  font-size:28px;
+  line-height: 100%;
+  margin-top: -375px;
+}
+#subtitle-scpsl-infoplugin{
+  font-family: 'Open Sans', sans-serif;
+  color:#ffffff;
+  font-size:25px;
+}
+#clicks{
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#intestazione-plugin{
+  position: absolute;
+  z-index: 0;
+  left:200px;
+}
+#title-plugin{
+  font-family: monospace;
+  font-weight: bold;
+  font-size:28px;
+  line-height: 100%;
+  margin-top: 12%;
+  color: #008080;
+}
+#subtitle-plugin{
+  font-family: 'Open Sans', sans-serif;
+  color:#9fafb1;
+  font-size:20px;
+}
 
 /*InfoGioco.Humans*/
 #intestazione-humans{
@@ -208,6 +250,25 @@ ul.a {
   margin-top: 6%;
 }
 #subtitle-humans{
+  font-family: 'Open Sans', sans-serif;
+  color:#9fafb1;
+  font-size:20px;
+}
+
+/*InfoGioco.SCP*/
+#intestazione-scp{
+  position: absolute;
+  z-index: 0;
+  left:130px;
+}
+#title-scp{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size:28px;
+  line-height: 100%;
+  margin-top: 6%;
+}
+#subtitle-scp{
   font-family: 'Open Sans', sans-serif;
   color:#9fafb1;
   font-size:20px;
@@ -229,6 +290,14 @@ ul.a {
   border-radius: 5px;
 }
 
+.soon {
+  background-color: #ffffff;
+  color: black;
+  padding: 1px 3px;
+  text-align: center;
+  border-radius: 3px;
+}
+
 body{
   /*overflow: hidden;*/
   user-select: none;
@@ -240,7 +309,7 @@ body{
 .topright {
   position: absolute;
   top: -45px;
-  right: -270px;
+  right: 10px;
   font-size: 18px;
   width: 250px;
   padding: 2px;
@@ -259,6 +328,10 @@ body{
 }
 hr.solid {
   border-top: 2px solid #bbb;
+}
+
+#AssistanceScp079{
+  color:#ffffff
 }
 
 .hide {

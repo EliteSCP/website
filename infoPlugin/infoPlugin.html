@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<head>
+  <title>Info Plugin - Elite Community</title>
+  <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <link rel="background" href="../img/backgound.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="../img/icon.png">
+  <script src="../script.js"></script>
+
+  <style>
+    white {color: white;}
+    black {color: black;}
+    red {color: red;}
+    green {color: green;}
+    pink {color: pink;}
+    mono {font-family: monospace;}
+    yellow {color: yellow;}
+    winner {color: #ff9966}
+  </style>
+</head>
+
+<body>
+  <img src="../img/backgound-infoGioco.png" id="background-scpsl" height="10000x10000">
+  <div id="navBar">
+    <div id="menu">
+      <div class="menuTab" onclick="openUrl('../SCP SL/sl.html', '_self')">↩ TORNA INDIETRO</div>
+      <div class="menuTab" onclick="openUrl('../index.html', '_self')">HOME</div>
+    </div>
+  </div>
+  <div id="intestazione-scpsl-infoplugin">
+    <div id="title-scpsl-infoplugin">INFO PLUGIN</div>
+    <div id="subtitle-scpsl-infoplugin">Canale dedicato alla spiegazione del server.</div>
+  </div>
+  <div id="intestazione-plugin">
+    <div id="title-plugin">ADVANCED WARN <span class="badge">MODERAZIONE</span></div>
+    <div id="subtitle-plugin">
+      <br>
+      Plugin dato alla moderazione del server, gli utenti possono fare i <u class="myDIV">seguenti comandi</u>.
+      <div class="hide">
+        &nbsp;<b>.sanzioni</b>: Mostrerà la lista delle tue sanzioni: SoftWarn, Warn, Kick, Ban, Mute, etc.
+        <br>
+        &nbsp;<b>.staff</b>: Chiamerà uno staffer, ovviamente se ci saranno di disponibili.
+      </div>
+    </div>
+
+    <div id="title-plugin">AUTO WARHEAD <span class="badge">GAMEPLAY</span></div>
+    <div id="subtitle-plugin">
+      <br>
+      Dopo 25 minuti dall'inizio del round, verrà attivata la warhead in automatico, <b>impossibile da disattivare</b>.
+    </div>
+
+    <div id="title-plugin">BETTER SCP-079 <span class="badge">SCP UPDATE, GAMEPLAY</span></div>
+    <div id="subtitle-plugin">
+      <br>
+      Upgrade per SCP-079, <u class="myDIV">passa il mouse qui per vedere le informazioni ed i comandi</u>.
+      <div class="hide">
+        I comandi qui sotto elencati potranno essere eseguiti in console, apribile con <b>ò</b>/<b>@</b>
+        <br>
+        <b>.aiuto</b>/<b>.comandi</b>: Ottieni la lista dei comandi che puoi eseguire, con indicati i loro costi ed esperienza guadagnata.
+        <br>
+        <br>
+        <mono>COMANDI GENERALI</mono>
+        <br>
+        <b>.luci spegni</b>: Per spegnere le luci di tutta la struttura per 32 secondi, con 200 di energia.
+        <br>
+        <b>.generatori lista</b>: Per ottenere tutta la lista e informazioni dei generatori presenti nella partita, con 0 di energia.
+        <br>
+        <b>.intercom interrompi</b>: Per interrompere una trasmissione all'Intercom, con 75 di energia.
+        <br>
+        <br>
+        <mono>COMANDI PER GLI ANNUNCI DEL RICONTENIMENTO</mono>
+        <br>
+        <b>.annunci contenimento [SCP]</b>: Per annunciare il ricontenimento dell'SCP specificato, con 60 di energia.
+        <br>
+        <br>
+        <mono>COMANDI ASCENSORI</mono>
+        <br>
+        <b>.ascensori lista</b>: Per ottenere la lista degli ascensori e i loro ID, con 0 di energia.
+        <br>
+        <b>.ascensori blocca [ID Ascensore]</b>: Per bloccare un ascensore per 15 secondi, con 75 di energia.
+        <br>
+        <b>.ascensori sblocca [ID Ascensore]</b>: Per abilitare un ascensore, con 50 di energia.
+        <br>
+        <br>
+        <mono>COMANDI PER SCP-914</mono>
+        <br>
+        <b>.914 imposta [Rought/Coarse/1:1/Fine/VeryFine]</b>: Per impostare SCP-914 con l'impostazione scelta, con 15 di energia.
+        <br>
+        <br>
+        <mono>COMANDI PER LA WARHEAD</mono>
+        <br>
+        <b>.warhead avvia</b>: Per attivare la warhead, con 150 di energia.
+        <br>
+        <b>.warhead interrompi</b>: Per disattivare la warhead, con 200 di energia.
+        <br>
+        <b>.warhead abilita</b>: Per alzare la leva della warhead, con 150 di energia.
+        <br>
+        <b>.warhead disabilita</b>: Per abbassare la leva della warhead, con 150 di energia.
+        <br>
+        <b>.warhead info</b>: Per ottenere le informazioni della warhead, con 0 di energia.
+        <br>
+        <br>
+        <mono><b>COMANDI PER <yellow>DONATOR+</yellow>, <yellow>DONATOR++</yellow>, <pink>NITRO BOOSTER</pink> e <pink>NITRO BOOSTER+</pink></b></mono>
+        <br>
+        <br>
+        <mono>COMANDI GENERALI</mono>
+        <br>
+        <b>.scuoti</b>: Per dare l'effetto che la Testata nucleare sia esplosa, con 30 di energia (eseguibile ogni 60 secondi).
+        <br>
+        <b>.914 avvia</b>: Per avviare SCP-914, con 30 di energia.
+        <br>
+        <br>
+        <mono>COMANDI PER GLI ANNUNCI</mono>
+        <br>
+        <b>.annunci broadcast [Testo]</b>: Per effettuare un Broadcast, con 0 di energia.
+        <br>
+        <b>.annunci cassie [Testo, massimo 200 caratteri]</b>: Per effettuare un C.A.S.S.I.E. in gioco, con 0 di energia.
+        <br>
+        <b>.annunci chaos</b>: Per far partire la musica dei Chaos e far arrivare il Van di essi, senza farli spawnare realmente, con 50 di energia.
+        <br>
+        <b>.annunci ntf</b>: Per far arrivare il Chopper degli NTF, senza farli spawnare realmente, con 50 di energia.
+      </div>
+    </div>
+
+    <div id="title-plugin">CUSTOM ITEMS <span class="badge">GAMEPLAY</span></div>
+    <div id="subtitle-plugin">
+      <br>
+      Aggiunta di "item custom", <u class="myDIV">passa il mouse qui per vederli</u>.
+      <div class="hide">
+        Non ancora presenti nel server.
+      </div>
+    </div>
+
+    <div id="title-plugin">FIRST BLOOD <span class="badge">ANNOUNCEMENT</span></div>
+    <div id="subtitle-plugin">
+      <br>
+      Alla prima morte della partita in corso ci sarà un broadcast che annuncerà il player di cosa (o chi) è morto.
+    </div>
+
+    <div id="title-plugin">HP REGENERATION <span class="badge">GAMEPLAY</span></div>
+    <div id="subtitle-plugin">
+      <br>
+      Se si perdono HP, da qualsiasi classe, questi si rigeneranno in lasso di tempo diverso ad ogni classe, <u class="myDIV">punta qui per vedere le classe ed il tempo</u>.
+      <div class="hide">
+        <b><mono>UMANI</mono></b>: Tutti gli umani ricevono normalmente 2 HP mentre in soglia critica 4 HP.
+        <br>
+        <b><mono>SCP</mono></b>: 17 HP tutti gli SCP tranne SCP-106 e gli SCP-049-2 ogni 12 secondi; compreso SCP-20743.
+        <br>
+        <b><mono>SCP-106</mono></b>: SCP-106 verrà rigenerato di 6 HP ogni 12 secondi.
+        <br>
+        <b><mono>SCP-049-2</mono></b>: SCP-049-2 verrà rigenerato di 20 HP ogni 12 secondi.
+        <br>
+        <b><mono>SCP-6666</mono></b>: SCP-DON_FRANCO verrà rigenerato di 10 HP ogni 12 secondi.
+        <br>
+        <br>
+        La soglia critica per gli umani e zombie è del 20% di salute, mentre per gli SCP è del 15%.
+        <br>
+        Nella soglia critica gli effetti dell'autocura sono aumentati a 8 HP per gli umani e 30 HP per gli SCP ogni 12s.
+        <br>
+        SCP-106 verrà rigenerato di 8 HP ogni 12s mentre SCP-049 verrà rigenerato di 35 HP ogni 12s.
+        <br>
+        L'autocura si abilita solo se la salute degli SCP è inferiore al 70% mentre per gli umani deve essere inferiore al 60%.
+        <br>
+        Per SCP-106 questa soglia è portata al 60% mentre per SCP-049-2 al 75%.
+      </div>
+    </div>
+
+    <div id="title-plugin">RAINBOW LOBBY <span class="badge">ANNOUNCEMENT: HINTS</span></div>
+    <div id="subtitle-plugin">
+      <br>
+      Plugin utilizzabile solo nella lobby di gioco, è un hint.
+    </div>
+
+    <div id="title-plugin">RAINBOW TAGS <span class="badge">BADGE</span></div>
+    <div id="subtitle-plugin">
+      <br>
+      lugin eslusivi <yellow>DONATOR+</yellow>, <yellow>DONATOR++</yellow> (e <pink>NITRO BOOSTER</pink>), colora il loro badge in tutti i colori del gioco.
+    </div>
+
+    <div id="title-plugin">RESPAWN TIMER <span class="badge">ANNOUNCEMENT: HINTS</span></div>
+    <div id="subtitle-plugin">
+      <br>
+      Plugin per gli spettatori, mostra il countdown prossimo al respawn, compresi ticket e prossima squadra di respawn.
+    </div>
+
+    <div id="title-plugin">SCP-008 <span class="badge">GAMEPLAY, SCP</span></div>
+    <div id="subtitle-plugin">
+      <br>
+      Plugin esclusiva SCP-049-2 (zombie), ad ogni loro hit causeranno l'infezione di SCP-008, drenando lentamente la vita, una volta che quest'ultima arriverà a 0 il player diventerà un SCP-049-2.
+    </div>
+
+    <div id="title-plugin">SCP-1162 <span class="badge">GAMEPLAY, SCP</span></div>
+    <div id="subtitle-plugin">
+      <br>
+      Un "buco" trovabile nella cella di SCP-173, una volta droppata una monetina, essa verrà convertita in un oggetto random.
+    </div>
+
+    <div id="title-plugin">SCP-20743 <span class="badge">GAMEPLAY, SCP</span></div>
+    <div id="subtitle-plugin">
+      <br>
+      SCP-20743 è una creazione della Chaos Insurgency, la fusione tra un umano innocente e un SCP potente come SCP-939, più informazioni <u class="myDIV">qui</u>.
+      <div class="hide">
+        <b><mono>
+          SCP-20743 spawnerà con almeno 16 giocatori presenti nel server selezionando a caso, pochi secondi dopo l'inizio del round, uno tra gli SCP che diventerà 20743.
+          <br>
+          C'è una possibilità del 40% che questo SCP si generi.
+        </mono></b>
+        <br>
+        <br>
+        SCP-20743 viene chiamato anche il cavaliere oscuro, quando esso spawna si genera anche l'istanza SCP-20743-1 sempre controllata da un player.
+        <br>
+        L'obiettivo di SCP-20743-1 è quello di sparare alla gente usando la COM-15 nel suo inventario, può anche indicare dove si trovano gli altri giocatori a SCP-20743 (che ha le stesse debolezze di 939, ovvero non vede i giocatori se non fanno rumore).
+        <br>
+        Come SCP-20743 dovrai portare SCP-20743-1 (che si trova sopra di te) dai nemici.
+        <br>
+        <br>
+        <mono>STATISTICHE DEGLI SCP</mono>
+        <br>
+        SCP-20743 ha 1550HP con gli AHP massimi impostati a 300.
+        <br>
+        SCP-20743 ha le stesse funzionalità di un SCP-939 normale.
+        <br>
+        SCP-20743-1 ha come oggetto nell'inventario una COM-15.
+        <br>
+        SCP-20743-1 è immortale, ma il suo destino è legato a SCP-20743, se lui muore anche egli morirà.
+        <br>
+        <br>
+        <mono>COMANDI DI SCP-20743</mono>
+        <br>
+        <b>.chide</b>: Nasconde SCP-20743-1 a SCP-20743.
+        <b>.cinfo</b>: Mostra le informazioni base del plugin (le info).
+      </div>
+    </div>
+
+    <div id="title-plugin">SCP-6666 <span class="badge">GAMEPLAY, SCP</span></div>
+    <div id="subtitle-plugin">
+      <br>
+      SCP tutorial che deve collaborare con gli SCP, ha 1500 HP e non può subire danni dagli altri SCP (compreso SCP-106), più informazioni <u class="myDIV">qui</u>.
+      <div class="hide">
+        <mono>Se saranno presenti almeno <b>13 giocatori</b> nel server, <b>20 secondi</b> dopo l'inizio un <b>Classe D</b> diventerà <b>SCP-DON_FRANCO</b>.</mono>
+        <br>
+        <br>
+        <code>*Sei stato scelto da SCP-6666 per diffondere la parola di Dio! Congratulazioni!*</code>
+        <br>
+        Con SCP-DON_FRANCO potrete attaccare utilizzando unicamente l'USP, con essa provocherete il 95% del suo danno.
+        <br>
+        La sua vita è pari a 1500 HP e il suo danno massimo che potrà ricevere dalle armi da fuoco, sarà di 35HP per sparo.
+        <br>
+        <br>
+        <code>*Attenti alle offerte!*</code>
+        <br>
+        Se un giocatore lascerà cadere a terra una moneta SCP-DON_FRANCO verrà teletrasportato al checkpoint più vicino (se nella Facility) o alla sua chiesa (se in surface), prenderà 100HP di danno e la moneta gli verrà consegnata nel suo inventario.
+        <br>
+        Se SCP-DON_FRANCO lascia cadere a terra una moneta il suo potere di distruggere le porte verrà ricaricato.
+        <br>
+        Il potere di SCP-DON_FRANCO consiste nel poter distruggere una porta ogni 30 secondi o meno (dipende dai suoi HP), semplicemente aprendole.
+        <br>
+        <br>
+        <mono><b>Furia di SCP-DON_FRANCO</b></mono>
+        <br>
+        SCP-DON_FRANCO potrà aprire le seguenti porte anche se non ha una keycard: Checkpoint, Gate e Intercom (all'Intercom potrà parlare).
+        <br>
+        SCP-DON_FRANCO potrà raccogliere solamente i seguenti oggetti: COM-18, SCP-018, Granate (sia Flash che Frag), medikit, monete e torce.
+        <br>
+        Ovviamente verrà considerato come un SCP a tutti gli effetti, quindi non riceverà danno da caduta e non potrà nè danneggiare nè essere danneggiato da altri SCP.
+      </div>
+    </div>
+
+    <div id="title-plugin"><a href="https://github.com/terminator-97/SCPUtils">SCPUtils</a> <span class="badge">MODERAZIONE, GAMEPLAY, BADGE, ANNOUNCEMENT</span></div>
+    <div id="subtitle-plugin">
+      <br>
+      Plugin gestionale del server, include anche alcuni miglioramenti e funzionalità utili per i giocatori.
+    </div>
+
+    <div id="title-plugin">TEXT CHAT <span class="badge">CHAT, CONSOLE</span></div>
+    <div id="subtitle-plugin">
+      <br>
+      Aggiunge una sorta di chat testuale attraverso la console di gioco <code>(@ oppure `)</code>, comandi <u class="myDIV">qui</u>.
+      <div class="hide">
+        <br>
+        <b>.chat public</b>/<b>.c p</b>: Manda un messaggio a tutti, nella console.
+        <br>
+        <b>.chat team</b>/<b>.c t</b>: Manderà un messaggio a tutto il team, nella console.
+        <br>
+        <b>.chat private [Nickname/UserID/PlayerID]</b>/<b>.c pr [Nickname/UserID/PlayerID]</b>: Manderà un messaggio privato al player indicato, nella console.</b>
+      </div>
+    </div>
+
+    <div id="title-plugin">XP PRO <span class="badge">GAMEPLAY, BADGE: CUSTOM INFO, ANNOUNCEMENT</span></div>
+    <div id="subtitle-plugin">
+      <br>
+      Sistema di XP, livelli e prestigi, <u class="myDIV">punta qui per maggiori informazioni</u>.
+      <div class="hide">
+        <br>
+        <mono><b>XP SYSTEM</b></mono>
+        <br>
+        Con questo plugin guadagnerete punti esperienza a seconda di che classe siete, di che classe uccidete oppure che azione svolgete.
+        <br>
+        Vincere un round garantirà qualche punto esperienza.
+        <br>
+        <br>
+        <mono><b>LEVEL UP</b></mono>
+        <br>
+        Salendo di livello, vi si sbloccherà una ricompenza che possono essere 𝗶𝘁𝗲𝗺 𝗮𝗴𝗴𝗶𝘂𝗻𝘁𝗶𝘃𝗶 𝗮𝗹𝗹𝗼 𝘀𝗽𝗮𝘄𝗻 oppure un 𝘂𝗽𝗴𝗿𝗮𝗱𝗲 𝗱𝗶 𝘂𝗻 𝗶𝘁𝗲𝗺 𝗴𝗶à 𝗽𝗼𝘀𝘀𝗲𝗱𝘂𝘁𝗼.
+        <br>
+        <br>
+        <mono><b>XP BOOST</b></mono>
+        <br>
+        I seguenti ruoli hanno una percentuale (%) di esperienza in più:<br>&nbsp;<yellow>DONATOR</yellow>: 10%<br>&nbsp;<yellow>DONATOR+</yellow>: 20%<br>&nbsp;<yellow>DONATOR++</yellow>: 30%
+        <br><br>&nbsp;<pink>NITRO BOOSTER</pink>: 20%<br>&nbsp;<pink>NITRO BOOSTER+</pink>: 30%
+        <br><br>&nbsp;<winner>EVENT WINNER</winner>: 10%
+        <br>
+      </div>
+      <br>
+      Per la customizzazione degli inventari, come prestigiare, come ottenere xp o i vari sblocchi, vai <u class="clicks" onclick="openUrl('./xpPro.html', '_self')">qui</u>.
+    </div>
+  </div>
+</body>

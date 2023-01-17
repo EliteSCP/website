@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<head>
+  <title>SCP:SL - Elite Community</title>
+  <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <link rel="background" href="../img/backgound.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="../img/icon.png">
+  <script src="../script.js"></script>
+
+  <style>
+    white {color: white;}
+    black {color: black;}
+    red {color: red;}
+    green {color: green;}
+    pink {color: pink;}
+    classD {color: #ff8e00;}
+    chaosInsurgency {color: #008f1e;}
+    mtf {color: #0096ff}
+    ntfPrivate {color: #6fc3ff;}
+    ntfSergeant {color: #0096ff;}
+    ntfCaptain {color: #003dca;}
+    scientist {color: #ffff7c;}
+    guard {color: #5b6370;}
+
+    lcz {color: #fAff86;}
+    hcz {color: #727472;}
+    ez {color: #ff6448;}
+    hs {color: #fc00ab;}
+
+    mono {font-family: monospace;}
+  </style>
+</head>
+
+<body>
+  <img src="../img/backgound-infoGioco.png" id="background-scpsl-infogioco" height="10000x10000">
+  <div id="navBar">
+    <div id="menu">
+      <div class="menuTab" onclick="openUrl('../infoGioco/infoGioco.html', '_self')">↩ TORNA INDIETRO</div>
+      <div class="menuTab" onclick="openUrl('../index.html', '_self')">HOME</div>
+    </div>
+  </div>
+  <div id="intestazione-scpsl-infogioco">
+    <div id="title-scpsl-infogioco"><red>CLASSI SCP</red></div>
+  </div>
+  <div id="intestazione-scp">
+    <div id="title-scp"><red>SCP-049</red> <span class="badge">ID: #005</span></div>
+    <div id="subtitle-scp">
+      <br>
+      All'inizio del round, <red>SCP-049</red> si genererà nella sua cella di contenimento in <hcz>Heavy Continement Zone</hcz>.
+      <br>
+      <red>SCP-049</red> ha statistiche moderate e funge da <red>SCP</red> di supporto.
+      <br>
+      È in grado di resuscitare qualsiasi giocatore morto entro 10 secondi.
+      <br>
+      <red>SCP-049</red> ha una resistenza ai proiettili del 20%, simile all'armatura.
+      <br>
+      Questa resistenza si applica solo alla normale salute di <red>SCP-049</red>, lo <hs>Hume Shield</hs> non ha resistenza.
+      <br>
+      <red>SCP-049</red> può parlare con gli altri <red>SCP</red> tenendo premuto <b><code>Q</code></b>, questa chat può essere ascoltata da tutti gli <red>SCP</red>.
+      <br>
+      <br>
+      <h2><mono>ARRESTO CARDIACO</mono></h2>
+      <red>SCP-049</red> può curare qualsiasi umano prendo il tasto destro del mouse, su di loro.
+      <br>
+      Gli umani subiranno un danno iniziale di 8hp e riceveranno l'effetto di <code>arresto cardiaco</code> per 20s, causando una diminuzione di 168hp.
+      <br>
+      <red>SCP-049</red> ha anche un breve tempo di recupero per poter infliggere nuovamente quest'effetto, dando tempo agli umani di poter fuggire da <red>SCP-049</red>.
+      <br>
+      L'adrenalina ed <red>SCP-500</red> annulleranno l'effetto di <code>arresto cardiaco</code>.
+      <br>
+      <br>
+      <h2><mono>RISURREZIONE</mono></h2>
+      Una volta che un umano muore, <red>SCP-049</red> può resuscitarlo tenendo premuto il tato <b><code>E</code></b> sul cadavere per resuscitarlo come <red>SCP-049-2</red>.
+      <br>
+      Un'indicatore apparirà su ogni cadavere che <red>SCP-049</red> potrà rianimare.
+      <br>
+      <br>
+      <h2><mono>RISPARMIO È IL MIGLIOR GUADAGNO</mono></h2>
+      <red>SCP-049</red> può resuscitare istanze di <red>SCP-049-2</red> cadute da giocatori umani. 
+      <br>
+      Ogni risurrezione riduce la loro salute totale e dopo la quarta morte non sarà più possibile rianimarlo.
+      <br>
+      <br>
+      <h2><mono>BUON SENSO DEL MEDICO</mono></h2>
+      Un bersaglio verrà selezionato e tracciato tramite un'icona simile a un "battito cardiaco" mentre concede a <red>SCP-049</red> un aumento di velocità.
+      <br>
+      Alla resurrezione, i bersagli uccisi da <red>SCP-049</red> o <red>SCP-049-2</red> avranno salute aggiuntiva e <red>SCP-049</red> ripristinerà una piccola quantità di <hs>Hume Shield</hs>.
+      <br>
+      <br>
+      <h2><mono>CHIAMATA DEL MEDICO</mono></h2>
+      <red>SCP-049</red> può premere <b><code>R</code></b> per chiamare a sè tutti gli <red>SCP-049-2</red>, consentendo a loro di vedere <red>SCP-049</red> anche oltre i muri.
+    </div>
+
+    <div id="title-scp"><red>SCP-049-2</red> <span class="badge">ID: #010</span></div>
+    <div id="subtitle-scp">
+      <br>
+      <red>SCP-049-2</red> si genera al suo punto di morte, non appena <red>SCP-049</red> lo resuscita.
+      <br>
+      <red>SCP-049-2</red> può comunicare con gli altri <red>SCP</red> premendo <b><code>Q</code></b>.
+      <br>
+      <br>
+      <h2><mono>ATTACCO</mono></h2>
+      Premendo il <code>tasto sinistro</code> del mouse potrai attaccare una qualsiasi classe umana, quest'attacco danneggerà di 30hp.
+      <br>
+      <br>
+      <h2><mono>SETE DI SANGUE</mono></h2>
+      Osservando una qualsiasi classe umana, la velocità di movimento di <red>SCP-049-2</red> aumenterà di 0.05 per ogni secondo trascorso, fino a raggiungere i 7.1 m/s.
+      <br>
+      <br>
+      <h2><mono>VORACITÀ</mono></h2>
+      La cura non è del tutto priva di benefici. 
+      <br>
+      Puoi rigenerare la tua carne usando la massa di qualsiasi cadavere vicino.
+      <br>
+      Non c'è condivisione però, quindi assicuratevi di essere il primo alla festa.
+    </div>
+
+    <div id="title-scp"><red>SCP-079</red> <span class="badge">ID: #007</span></div>
+    <div id="subtitle-scp">
+      <br>
+      Dopo esser stato generato, <red>SCP-079</red> potrà iniziare a controllare le telecamere della struttura, <red>SCP-079</red> è capace di interagire con qualsiasi cosa si trovi nella struttura: porte, luci, warhead, intercom e broadcast.
+      <br>
+      <br>
+      <red>SCP-079</red> può parlare con tutti gli <red>SCP</red> premendo il tasto <b><code>Q</code></b>.
+      <br>
+      <red>SCP-079</red> può vedere anche coloro che utilizzano <red>SCP-268</red>.
+      <br>
+      <br>
+      Se <red>SCP-2176</red> sarà lanciato in una stanza con all'interno <red>SCP-079</red>, esso diverrà stordito per 8 secondi e la sua energia scenderà a 0.
+      <br>
+      <br>
+      <h2><mono>RICONTENIMENTO</mono></h2>
+      <red>SCP-079</red> è invulnerabile a tutte le forme di armi, sia al piombo sia esplosive.
+      <br>
+      L'unico modo per ricontenere <red>SCP-079</red> sarà utilizzando le 3 <b>Emergency Power Station</b> che si trovano in giro per la struttura.
+      <br>
+      Per aprirle servirà una tessera magnetica di livello <code>Armory Access 2</code>.
+      <br>
+      <br>
+      L'Alpha Warhead, se detonata, terminerà <red>SCP-079</red>.
+      <br>
+      <br>
+      <h2><mono>ABILITÀ</mono></h2>
+      <red>SCP-079</red> ha molte abilità che si possono utilizzare all'interno, ed esterno, della struttura.
+      <br>
+      Queste abilità potranno essere attivate non appena compariranno sullo schermo di <red>SCP-079</red> oppure utilizzando i tasti d'azione, segnati sullo schermo.
+      <br>
+      <br>
+      <h3><mono>TELECAMERE DI SORVEGLIANZA</mono></h3>
+      <red>SCP-079</red> può cambiare telecamera utilizzando l'icona su schermo col <code>tasto sinistro</code> o cliccando <code>W A S D</code>.
+      <br>
+      <br>
+      <h3><mono>MAPPA DI SORVEGLIANZA</mono></h3>
+      <red>SCP-079</red> può aprire la mappa di sorveglianza premendo il tasto <code>TAB ↹</code>, consentendo ad <red>SCP-079</red> di cambiare telecamera in qualsiasi zona della mappa.
+      <br>
+      La stanza corrente dove si trova <red>SCP-079</red> sarà colorata di verde, mentre se è attiva una EPS sarà di colore rosso.
+      <br>
+      <br>
+      La mappa consente ad <red>SCP-079</red> di spostarsi in qualsiasi zona della mappa, ad eccezione della CC. di <red>SCP-049</red> e l'Alpha Warhead.
+      <br>
+      L'AP scenderà in base a questo costo: LCZ ⬅ 30 AP ➡ HCZ ⬅ 20 AP ➡ EZ ⬅ 30 AP ➡ SZ.
+      <br>
+      <br>
+      <h3><mono>CONTATORE DEI TARGET</mono></h3>
+      <red>SCP-079</red> può vedere l'ammontare delle classi umane rimanenti sul suo schermo.
+      <br>
+      Quest'abilità è passiva e non ha bisogno di essere attivata.
+      <br>
+      <br>
+      Al <b>Tier I</b>, il contatore mostrerà le seguenti liste: <b>FORME DI VITA TOTALI</b>, <b>TARGET</b> ed <b>ISTANZE SCP</b>
+      <br>
+      &nbsp;<i>FORME DI VITA TOTALI</i> rappresenta tutti gli essere umani.
+      <br>
+      &nbsp;<i>TARGET</i> rappresenta tutti gli essere umani ad esclusione della Chaos Insurgency.
+      <br>
+      <br>
+      Al <b>Tier II</b>, il contatore aggiungerà alla lista: <b>MILITARI</b> e <b>CIVILI</b>
+      <br>
+      &nbsp;<i>MILITARI</i> rappresenta la <code>MOBILE TASK FORCE</code> e la <code>CHAOS INSURGENCY</code>.
+      <br>
+      &nbsp;<i>CIVILI</i> rappresenta il <code>PERSONALE DI CLASSE D</code> e gli <code>SCIENZIATI</code>.
+      <br>
+      <br>
+      Al <b>Tier III</b>, il contatore rimuoverà "<b>MILITARI</b> e <b>CIVILI</b>" ed aggiungerà: <b>PERSONALE DI CLASSE D</b>, <b>SCIENZIATI</b>, <b>CHAOS INSURGENCY</b> e <b>FORZE DELLA FONDAZIONE</b>.
+      <br>
+      <br>
+      I <b>TUTORIAL</b> saranno considerati in "<b>FORME DI VITA TOTALI</b>".
+      <br>
+      <br>
+      <h3><mono>TRACCIATORE DEGLI SCP</mono></h3>
+      La mappa di <red>SCP-079</red> ha la funzione di tracciare tutti gli SCP all'interno della mappa, <red>SCP-049-2</red> non sarà segnato all'interno della mappa.
+      <br>
+      Al <b>Tier I</b>, il tracciatore sarà un quadrato, arancione, in mezzo alla stanza.
+      <br>
+      Al <b>Tier II</b>, il tracciatore sarà un icona a v in direzione dove guarda l'<red>SCP</red>, la stanza mostrerà tutti gli <red>SCP</red> che saranno in questa stanza.
+      <br>
+      Al <b>Tier IV</b>, il tracciatore conterrà il nome dell'<red>SCP</red>
+      <br>
+      <br>
+      <h3><mono>CONTROLLO REMOTO DELLE PORTE</mono></h3>
+      <red>SCP-079</red> può interagire con tutte le porte della struttura.
+      <br>
+      <br>
+      <h3><mono>CONTROLLO REMOTO DEI TESLA GATE</mono></h3>
+      <red>SCP-079</red> può forzare un tesla gate ad attivarsi al costo di 40 AP, quest'abilità ha 4 secondi di cooldown.
+      <br>
+      <br>
+      <h3><mono>CONTROLLO REMOTO DEGLI ALTOPARLANTI</mono></h3>
+      <red>SCP-079</red> può utilizzare tutti gli altoparlanti in giro per la struttura, premendo il tasto <code>V</code>.
+      <br>
+      Ogni zona ha la sua tipologia di altoparlante.
+      <br>
+      <br>
+      <h3><mono>SISTEMA DI SEGNALAZIONE DI UNA POSIZIONE</mono></h3>
+      <red>SCP-079</red> può segnalare la posizione agli altri <red>SCP</red>.
+      <br>
+      Il ping dura 5 secondi ed ha un cooldown di 3 secondi.
+      <br>
+      <red>SCP-079</red> può piazzare massimo 3 ping per volta.
+      <br>
+      <br>
+      <h3><mono>BLACKOUT</mono></h3>
+      Al <b>Tier II</b>, <red>SCP-079</red> sbloccherà l'abilità di <code>Blackout</code>.
+      <br>
+      L'abilità costa 15AP e spegne tutte le luci in una singola camera per 15 secondi.
+      <br>
+      Al <b>Tier III</b>, l'abilità di <code>Blackout</code> s'incrementerà fino a poter spegnere le luci di 2 stanze diverse.
+      <br>
+      Al <b>Tier IV</b> l'abilità di <code>Blackout</code> s'incrementerà al livello massimo, raggiungendo 4 stanze diverse.
+      <br>
+      <br>
+      Di default, il tasto per eseguire il <code>Blackout</code> è <code>F</code>.
+      <br>
+      Le telecamere abiliteranno automaticamente la <b>Visione notturna</b> così da poter vedere attraverso.
+      <br>
+      <br>
+      <red>SCP-2176</red> potrà essere usato per interrompere istantaneamente il <code>Blackout</code> in una determinata stanza.
+      <br>
+      <br>
+      <h3><mono>BLACKOUT DI ZONA</mono></h3>
+      Al <b>Tier V</b>, <red>SCP-079</red> sbloccherà l'abilità di <code>Blackout di Zona</code>, consentendo di spegnere tutte le luci di una determinata <code id="clicks">Zona</code> per 60 secondi al costo di 200 AP.
+      <br>
+      L'abilità ha un cooldown di 90 secondi, <cite>questo cooldown non viene applicato al BLACKOUT di una singola stanza</cite>.
+      <br>
+      <red>SCP-079</red> non può utilizzare quest'abilità in <code id="clicks">Surface</code>.
+      <br>
+      Al posto di utilizzare quest'abilità può utilizzare il Blackout normale.
+      <br>
+      <br>
+      <h3><mono>LOCKDOWN</mono></h3>
+      Al <b>Tier III</b>, <red>SCP-079</red> sblocca l'abilità di <code>Lockdown</code>.
+      <br>
+      L'abilità costa 100AP e bloccherà, e chiuderà, tutte le porte in una singola stanza con un cooldown di 10 secondi.
+      <br>
+      Non c'è nessun miglioramento dell'abilità, e questo significa che potrà bloccare una singola stanza per volta.
+      <br>
+      <br>
+      Di default, il tasto per eseguire il <code>Lockdown</code> è <code>G</code>.
+      <br>
+      <br>
+      <h3><mono>SCANNER PER LE FUGHE <span class="soon">NON ANCORA IMPLEMENTATO</span></mono></h3>
+      Al <b>Tier IV</b>, <red>SCP-079</red> potrà abilitare la funzione di <code>Scanner</code> inserita nella sue telecamere.
+      <br>
+      <cite>Normalmente usata per tracciare gli SCP fuggiti</cite> <red>SCP-079</red> è in grado di localizzare tutti gli essere umani in una certa <code id="clicks">Zona</code>, una volta localizzati, un allarme suonerà nella stanza dove si trova l'essere umano.
+      <br>
+      L'allarme si attiverà tra gli 8 ed i 35 secondi dopo la localizzazione.
+      <br>
+      <br>
+      <h3><mono>CONTROLLO REMOTO DELL'ALPHA WARHEAD <span class="soon">NON ANCORA IMPLEMENTATO</span></mono></h3>
+      Al <b>Tier V</b>, <red>SCP-079</red> sarà in grado di controllare in modo remoto l'Alpha Warhead, l'abilità costerà 200AP.
+      <br>
+      Se l'Alpha Warhead sarà attivata da <red>SCP-079</red>, esso non morirà, ma verrà teletrasportato in Surface, e potrà ancora usare le sue abilità.
+      <br>
+      Per ricontenerlo basterà semplicemente ricontenere gli altri <red>SCP</red>.
+      <br>
+      <br>
+      <br>
+      <h2><mono>PUNTI ESPERIENZA</mono></h2>
+      <red>SCP-079</red> può utilizzare i suoi punti esperienza per raggiungere <b>Tier</b>.
+      <br>
+      Ogni volta che <red>SCP-079</red> salirà di <b>Tier</b> essi si resettereanno ed ogni <b>Tier</b> avrà i suoi punti esperienza.
+      <br>
+      <br>
+      <h3><mono>ASSISTENZA AGLI SCP</mono></h3>
+      Interrompere la fuga di un essere umano garantirà ad <red>SCP-079</red> <code>5</code> EXP.
+      <section id="AssistanceScp079">
+      &nbsp;Chiudere o bloccare la porta o chiudere un ascensore verrà contato come interruzione di fuga;
+      <br>
+      &nbsp;Questo verrà contato solo se l'<red>SCP</red> si troverà a 20 metri dall'umano e che l'<red>SCP</red> lo stia inseguendo.
+     </section>
+      <br>
+      <br>
+      Proteggere un compagno di squadra dall'attacco garantirà ad <red>SCP-079</red> varie quantità di EXP in base al numero di attaccanti.
+      <section id="AssistanceScp079">
+      &nbsp;<red>SCP-079</red> deve chiudere o bloccare una porta per proteggere l'<red>SCP</red>;
+      <br>
+      &nbsp;L'<red>SCP</red> deve aver perso meno di 100 HP;
+      <br>
+      &nbsp;&nbsp;Un attaccante: 10EXP
+      <br>
+      &nbsp;&nbsp;Due attaccanti: 15EXP
+      <br>
+      &nbsp;&nbsp;Tre attaccanti: 25EXP
+      <br>
+      &nbsp;&nbsp;Quattro attaccanti: 40EXP
+      <br>
+      &nbsp;&nbsp;Cinque+ attaccanti: 60EXP
+      </section>
+      <br>
+      <br>
+      Salvare un <red>SCP</red> dall'attacco di una <code>MICRO H.I.D.</code> garantirà <code>50</code> EXP.
+      <section id="AssistanceScp079">
+        &nbsp;<red>SCP-079</red> deve chiudere o bloccare una porta per proteggere l'<red>SCP</red>;
+        <br>
+        &nbsp;La MICRO H.I.D. deve essere carica almeno all'80%;
+        <br>
+        &nbsp;&nbsp;<cite>Questa ricompensa verrà data una sola volta per game</cite>.
+      </section>
+      <br>
+      <br>
+      <h3><mono>ASSISTENZA ALLA TERMINAZIONE</mono></h3>
+      <red>SCP-079</red> guadagnerà EXP se aiuta con successo ad uccidere un altro giocatore.
+      <br>
+      &nbsp;50 EXP se aiuterà nella terminazione di uno <scientist>Scienziato</scientist>;
+      <br>
+      &nbsp;40 EXP se aiuterà nella terminazione di un <classD>Classe D</classD>;
+      <br>
+      &nbsp;30 EXP se aiuterà nella terminazione di un <mtf>NTF</mtf> o <chaosInsurgency>Chaos Insurgency</chaosInsurgency>;
+      <br>
+      &nbsp;25 EXP se aiuterà nella terminazione di una <guard>Guardia della struttura</guard>.
+      <br>
+      <br>
+      <h3><mono>UCCISIONI DIRETTE</mono></h3>
+      Le uccisioni dirette con <red>SCP-079</red> sono solo accessibili via Tesla Gate:
+      <br>
+      &nbsp;75 EXP se aiuterà nella terminazione di uno <scientist>Scienziato</scientist>;
+      <br>
+      &nbsp;60 EXP se aiuterà nella terminazione di un <classD>Classe D</classD>;
+      <br>
+      &nbsp;45 EXP se aiuterà nella terminazione di un <mtf>NTF</mtf> o <chaosInsurgency>Chaos Insurgency</chaosInsurgency>;
+      <br>
+      &nbsp;37,5 EXP se aiuterà nella terminazione di una <guard>Guardia della struttura</guard>.
+      <br>
+      <br>
+      <h2><mono>TIER</mono></h2>
+      <red>SCP-079</red> sale di livello man mano che guadagnerà EXP, ogni Tier sblocca nuove abilità.
+      <br>
+      <br>
+      <mono>Tier 1:</mono>
+      <br>
+      &nbsp;100 AP massimi
+      <br>
+      &nbsp;Rigenera AP a 1,2 AP al secondo
+      <br>
+      &nbsp;Interazioni di base della porta (apri/chiudi/blocca)
+      <br>
+      &nbsp;Invia ascensori da inviare su o giù
+      <br>
+      &nbsp;Attiva i Tesla Gate
+      <br>
+      &nbsp;Parla con gli umani tramite altoparlanti
+      <br>
+      &nbsp;Contatore obiettivo di base
+      <br>
+      &nbsp;SCP Tracker sulla loro mappa
+      <br>
+      &nbsp;Sistema di ping
+      <br>
+      <br>
+      <mono>Tier II:</mono>
+      <br>
+      &nbsp;Si sblocca a 80 EXP
+      <br>
+      &nbsp;110 AP massimi
+      <br>
+      &nbsp;Rigenera AP a 2,5 AP al secondo
+      <br>
+      &nbsp;Capacità di oscuramento
+      <br>
+      &nbsp;Il contatore dei bersagli ora mostra Militare e Civile
+      <br>
+      <br>
+      <mono>Tier III</mono>
+      <br>
+      &nbsp;Si sblocca a 130 EXP (210 EXP in totale)
+      <br>
+      &nbsp;125 AP massimo
+      <br>
+      &nbsp;Rigenera AP a 4,1 AP al secondo
+      <br>
+      &nbsp;Capacità di blocco
+      <br>
+      &nbsp;Può oscurare due stanze contemporaneamente
+      <br>
+      &nbsp;Target Counter mostra singole classi umane
+      <br>
+      &nbsp;SCP Tracker ora mostra più SCP in una stanza, la direzione in cui sta guardando un SCP e la posizione approssimativa in una data stanza
+      <br>
+      <br>
+      <mono>Tier IV</mono>
+      <br>
+      &nbsp;Si sblocca a 250 EXP (460 EXP in totale)
+      <br>
+      &nbsp;150 AP massimi
+      <br>
+      &nbsp;Rigenera AP a 6,8 AP al secondo
+      <br>
+      &nbsp;Scanner delle violazioni
+      <br>
+      &nbsp;Oscura quattro stanze contemporaneamente
+      <br>
+      &nbsp;Gli AP possono rigenerarsi durante il Lockdown, ma solo a metà della velocità
+      <br>
+      &nbsp;SCP Tracker ora mostra il nome degli SCP.
+      <br>
+      <br>
+      <mono>Tier V</mono>
+      <br>
+      &nbsp;Si sblocca a 500 EXP (960 EXP in totale)
+      <br>
+      &nbsp;200 AP massimi
+      <br>
+      &nbsp;Rigenera AP a 11,2 AP al secondo.
+      <br>
+      &nbsp;Zona oscurata
+      <br>
+      &nbsp;Attivazione testata alfa
+    </div>
+  </div>
+</body>

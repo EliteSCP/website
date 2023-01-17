@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<head>
+  <title>XP PRO - Elite Community</title>
+  <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <link rel="background" href="../img/backgound.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="../img/icon.png">
+  <script src="../script.js"></script>
+
+  <style>
+    white {color: white;}
+    black {color: black;}
+    red {color: red;}
+    green {color: green;}
+    classD {color: #ff8e00;}
+    chaosInsurgency {color: #008f1e;}
+    mtf {color: #0096ff}
+    ntfPrivate {color: #6fc3ff;}
+    ntfSergeant {color: #0096ff;}
+    ntfCaptain {color: #003dca;}
+    scientist {color: #ffff7c;}
+    guard {color: #5b6370;}
+
+    body {user-select:text;}
+  </style>
+</head>
+
+<body>
+  <img src="../img/backgound-infoGioco.png" id="background-scpsl" height="10000x10000">
+  <div id="navBar">
+    <div id="menu">
+      <div class="menuTab" onclick="openUrl('../infoPlugin/infoPlugin.html', '_self')">↩ TORNA INDIETRO</div>
+      <div class="menuTab" onclick="openUrl('../index.html', '_self')">HOME</div>
+    </div>
+  </div>
+  <div id="intestazione-scpsl-infoplugin">
+    <div id="title-scpsl-infoplugin">XP PRO</div>
+    <div id="subtitle-scpsl-infoplugin">Sistema di XP, livelli e prestigi.</div>
+  </div>
+  <div id="intestazione-plugin">
+    <div id="title-plugin">XP PRO <span class="badge">CUSTOM INVENTORY</span></div>
+    <div id="subtitle-plugin">
+      <br>
+      <b><mono><classD>PERSONALE DI CLASSE D</classD></mono></b>
+      <br>
+      &nbsp;Livello 1: Torcia
+      <br>
+      &nbsp;Livello 5: Antidolorifici
+      <br>
+      &nbsp;Livello 10: Kit di Pronto Soccorso
+      <br>
+      &nbsp;Livello 15: Moneta
+      <br>
+      &nbsp;Livello 25: Radio
+      <br>
+      &nbsp;Livello 35: Tessera Magnetica del Bidello
+      <br>
+      &nbsp;Livello 40: Granata accecante
+      <br>
+      &nbsp;Livello 45: SCP-500
+      <br>
+      &nbsp;Livello 50: Adrenalina
+      <br>
+      &nbsp;Livello 75: Tessera Magnetica dello Scienziato, SCP-207
+      <br>
+      <br>
+      <br>
+      <b><mono><scientist>SCIENZIATO</scientist></mono></b>
+      <br>
+      &nbsp;Livello 1: Tessera Magnetica dello Scienziato
+      <br>
+      &nbsp;Livello 3: Kit di Pronto Soccorso, Torcia
+      <br>
+      &nbsp;Livello 5: Antidolorifici
+      <br>
+      &nbsp;Livello 10: Moneta
+      <br>
+      &nbsp;Livello 15: Radio
+      <br>
+      &nbsp;Livello 25: Adrenalina
+      <br>
+      &nbsp;Livello 30: Granata accecante
+      <br>
+      &nbsp;Livello 60: SCP-500
+      <br>
+      &nbsp;Livello 75: Tessera Magnetica del Ricercatore, SCP-207
+      <br>
+      <br>
+      <br>
+      <b><mono><guard>GUARDIA DELLA STRUTTURA</guard></mono></b>
+      <br>
+      &nbsp;Livello 1: Tessera Magnetica della Guardia della Struttura, FSP-9, Radio, Torcia, Corazza leggera
+      <br>
+      &nbsp;Livello 5: Kit di Pronto Soccorso, Antidolorifici
+      <br>
+      &nbsp;Livello 10: Moneta
+      <br>
+      &nbsp;Livello 15: Granata accecante
+      <br>
+      &nbsp;Livello 20: Adrenalina
+      <br>
+      &nbsp;Livello 25: COM-15
+      <br>
+      &nbsp;Livello 30: Crossvec
+      <br>
+      &nbsp;Livello 35: Corazza da combattimento
+      <br>
+      &nbsp;Livello 40: COM-18
+      <br>
+      &nbsp;Livello 50: SCP-500
+      <br>
+      &nbsp;Livello 60: .44 Revolver
+      <br>
+      &nbsp;Livello 75: Tessera Magnetica del Soldato Nine-Tailed Fox, SCP-207
+      <br>
+      <br>
+      <br>
+      <b><mono><mtf>NINE-TAILED FOX</mtf></mono></b>
+      <br>
+      <b><mono><ntfPrivate>SOLDATO NINE-TAILED FOX</ntfPrivate></mono></b>
+      <br>
+      &nbsp;Livello 1: Tessera Magnetica del Soldato Nine-Tailed Fox, Crossvec, Radio, Torcia, Corazza leggera
+      <br>
+      &nbsp;Livello 5: Kit di Pronto Soccorso, Antidolorifici
+      <br>
+      &nbsp;Livello 15: Granata accecante
+      <br>
+      &nbsp;Livello 25: Corazza da combattimento, COM-15
+      <br>
+      &nbsp;Livello 35: FSP-9, SCP-500
+      <br>
+      &nbsp;Livello 45: Granata a frammentazione, COM-18
+      <br>
+      &nbsp;Livello 50: .44 Revolver
+      <br>
+      &nbsp;Livello 60: MTF-E11-SR
+      <br>
+      &nbsp;Livello 70: SCP-207
+      <br>
+      &nbsp;Livello 75: Tessera Magnetica del Sergente Nine-Tailed Fox
+      <br>
+      <br>
+      <br>
+      <b><mono><ntfSergeant>SERGENTE NINE-TAILED FOX</ntfSergeant></mono></b>
+      <br>
+      &nbsp;Livello 1: Tessera Magnetica del Sergente Nine-Tailed Fox, MTF-E11-SR, Radio, Torcia, Corazza leggera
+      <br>
+      &nbsp;Livello 5: Kit di Pronto Soccorso, Antidolorifici
+      <br>
+      &nbsp;Livello 15: Adrenalina
+      <br>
+      &nbsp;Livello 20: Granata accecante, COM-15
+      <br>
+      &nbsp;Livello 25: Corazza da combattimento
+      <br>
+      &nbsp;Livello 30: SCP-500
+      <br>
+      &nbsp;Livello 35: Crossvec, FSP-9
+      <br>
+      &nbsp;Livello 40: Granata a frammentazione, COM-18
+      <br>
+      &nbsp;Livello 45: .44 Revolver
+      <br>
+      &nbsp;Livello 50: Tessera Magnetica del Capitano Nine-Tailed Fox
+      <br>
+      &nbsp;Livello 70: SCP-207
+      <br>
+      &nbsp;Livello 75: Tessera Magnetica dell'Ingegnere di Contenimento
+      <br>
+      <br>
+      <br>
+      <b><mono><ntfSergeant>SPECIALISTA NINE-TAILED FOX</ntfSergeant></mono></b>
+      <br>
+      &nbsp;Livello 1: Tessera Magnetica del Sergente Nine-Tailed Fox, MTF-E11-SR, Radio, Torcia, Corazza da combattimento
+      <br>
+      &nbsp;Livello 5: Kit di Pronto Soccorso, Antidolorifici
+      <br>
+      &nbsp;Livello 15: Adrenalina
+      <br>
+      &nbsp;Livello 20: Granata accecante, COM-15
+      <br>
+      &nbsp;Livello 25: Corazza pesante
+      <br>
+      &nbsp;Livello 30: SCP-500
+      <br>
+      &nbsp;Livello 35: Crossvec, FSP-9
+      <br>
+      &nbsp;Livello 40: Granata a frammentazione, COM-18
+      <br>
+      &nbsp;Livello 45: .44 Revolver
+      <br>
+      &nbsp;Livello 55: Tessera Magnetica del Capitano Nine-Tailed Fox
+      <br>
+      &nbsp;Livello 70: SCP-207
+      <br>
+      &nbsp;Livello 75: Tessera Magnetica del Responsabile della Struttura
+      <br>
+      <br>
+      <br>
+      <b><mono><ntfCaptain>CAPITANO NINE-TAILED FOX</ntfCaptain></mono></b>
+      <br>
+      &nbsp;Livello 1: Tessera Magnetica del Capitano Nine-Tailed Fox, MTF-E11-SR, Radio, Torcia, Corazza leggera
+      <br>
+      &nbsp;Livello 5: Kit di Pronto Soccorso, Antidolorifici
+      <br>
+      &nbsp;Livello 10: Granata a frammentazione
+      <br>
+      &nbsp;Livello 20: SCP-500
+      <br>
+      &nbsp;Livello 25: Crossvec, FSP-9, COM-15
+      <br>
+      &nbsp;Livello 35: COM-18
+      <br>
+      &nbsp;Livello 45: .44 Revolver
+      <br>
+      &nbsp;Livello 55: Logicer
+      <br>
+      &nbsp;Livello 70: SCP-207
+      <br>
+      &nbsp;Livello 75: Tessera Magnetica del Responsabile della Struttura, Tessera Magnetica dell'Ingegnere di Contenimento
+      <br>
+      <br>
+      <br>
+      <b><mono><chaosInsurgency>CHAOS INSURGENCY</chaosInsurgency></mono></b>
+      <br>
+      <b><mono><chaosInsurgency>ARRUOLATO</chaosInsurgency></mono></b>
+      <br>
+      &nbsp;Livello 1: Tessera Magnetica del Capitano Nine-Tailed Fox oppure Dispositivo di accesso della Chaos Insurgency, AK, Armatura da combattimento, Torcia
+      <br>
+      &nbsp;Livello 5: Kit di Pronto Soccorso, Antidolorifici
+      <br>
+      &nbsp;Livello 15: Corazza pesante
+      <br>
+      &nbsp;Livello 20: Adrenalina
+      <br>
+      &nbsp;Livello 25: Granata accecante
+      <br>
+      &nbsp;Livello 30: SCP-500, Radio
+      <br>
+      &nbsp;Livello 35: COM-15, Granata a frammentazione
+      <br>
+      &nbsp;Livello 40: FSP-9
+      <br>
+      &nbsp;Livello 45: COM-18
+      <br>
+      &nbsp;Livello 50: .44 Revolver
+      <br>
+      &nbsp;Livello 70: SCP-207
+      <br>
+      &nbsp;Livello 75: Tessera Magnetica del Responsabile della Struttura
+      <br>
+      <br>
+      <br>
+      <b><mono><chaosInsurgency>FUCILIERE</chaosInsurgency></mono></b>
+      <br>
+      &nbsp;Livello 1: Tessera Magnetica del Capitano Nine-Tailed Fox oppure Dispositivo di accesso della Chaos Insurgency, AK, Armatura da combattimento, Torcia
+      <br>
+      &nbsp;Livello 5: Kit di Pronto Soccorso, Antidolorifici
+      <br>
+      &nbsp;Livello 15: Corazza pesante
+      <br>
+      &nbsp;Livello 20: Adrenalina
+      <br>
+      &nbsp;Livello 25: Granata accecante
+      <br>
+      &nbsp;Livello 30: SCP-500, Radio
+      <br>
+      &nbsp;Livello 35: COM-15, Granata a frammentazione
+      <br>
+      &nbsp;Livello 40: FSP-9
+      <br>
+      &nbsp;Livello 45: COM-18
+      <br>
+      &nbsp;Livello 50: .44 Revolver
+      <br>
+      &nbsp;Livello 70: SCP-207
+      <br>
+      &nbsp;Livello 75: Tessera Magnetica dell'Ingegnere di Contenimento
+      <br>
+      <br>
+      <br>
+      <b><mono><chaosInsurgency>PREDATORE</chaosInsurgency></mono></b>
+      <br>
+      &nbsp;Livello 1: Tessera Magnetica del Capitano Nine-Tailed Fox oppure Dispositivo di accesso della Chaos Insurgency, Fucile a pompa, .44 Revolver, Armatura leggera, &nbsp;Torcia
+      <br>
+      &nbsp;Livello 5: Kit di Pronto Soccorso, Antidolorifici
+      <br>
+      &nbsp;Livello 15: Armatura da combattimento
+      <br>
+      &nbsp;Livello 20: Adrenalina
+      <br>
+      &nbsp;Livello 25: Granata accecante
+      <br>
+      &nbsp;Livello 30: SCP-500, Radio
+      <br>
+      &nbsp;Livello 35: COM-15, Granata a frammentazione
+      <br>
+      &nbsp;Livello 40: Crossvec, FSP-9
+      <br>
+      &nbsp;Livello 45: COM-18
+      <br>
+      &nbsp;Livello 70: SCP-207
+      <br>
+      &nbsp;Livello 75: Tessera Magnetica dell'Ingegnere di Contenimento
+      <br>
+      <br>
+      <br>
+      <b><mono><chaosInsurgency>REPRESSORE</chaosInsurgency></mono></b>
+      <br>
+      &nbsp;Livello 1: Tessera Magnetica del Capitano Nine-Tailed Fox oppure Dispositivo di accesso della Chaos Insurgency, Logicer, Armatura leggera, Armatura da &nbsp;combattimento, Torcia
+      <br>
+      &nbsp;Livello 5: Kit di Pronto Soccorso, Antidolorifici
+      <br>
+      &nbsp;Livello 15: Armatura pesante
+      <br>
+      &nbsp;Livello 20: Adrenalina
+      <br>
+      &nbsp;Livello 25: Granata accecante
+      <br>
+      &nbsp;Livello 30: SCP-500, Radio
+      <br>
+      &nbsp;Livello 35: COM-15, Granata a frammentazione
+      <br>
+      &nbsp;Livello 40: Crossvec, FSP-9, MTF-E11-SR
+      <br>
+      &nbsp;Livello 45: COM-18
+      <br>
+      &nbsp;Livello 50: .44 Revolver
+      <br>
+      &nbsp;Livello 70: SCP-207
+      <br>
+      &nbsp;Livello 75: Tessera Magnetica dell'Ingegnere di Contenimento
+      <br>
+      <br>
+      <br>
+      <h4><b>EXTRA NATO 556 AMMO</b> <mono class="badge">PRESTIGE TYPE</mono></h4>
+      &nbsp;extranato556ammo
+      <br>
+      &nbsp;ammo556
+      <br>
+      &nbsp;ammo556mm
+      <br>
+      &nbsp;munizioni556
+      <br>
+      &nbsp;munizioni556mm
+      <br>
+      &nbsp;nato556
+      <br>
+      &nbsp;nato556mm
+      <br>
+      &nbsp;extrammo556
+      <br>
+      &nbsp;extraammo556mm
+      <br>
+      &nbsp;extraammonato556mm
+      <br>
+      &nbsp;munizioniextra556
+      <br>
+      &nbsp;munizioniextra556mm
+      <br>
+      &nbsp;munizioniextranato556mm
+      <br>
+      &nbsp;munizioninato556mmextra
+      <br>
+      <br>
+      <br>
+      <h4><b>EXTRA NATO 762 AMMO</b> <mono class="badge">PRESTIGE TYPE</mono></h4>
+      &nbsp;extranato762ammo
+      <br>
+      &nbsp;ammo762
+      <br>
+      &nbsp;ammo762mm
+      <br>
+      &nbsp;munizioni762
+      <br>
+      &nbsp;munizioni762mm
+      <br>
+      &nbsp;nato762
+      <br>
+      &nbsp;nato762mm
+      <br>
+      &nbsp;extrammo762
+      <br>
+      &nbsp;extraammo762mm
+      <br>
+      &nbsp;extraammonato762mm
+      <br>
+      &nbsp;munizioniextra762
+      <br>
+      &nbsp;munizioniextra762mm
+      <br>
+      &nbsp;munizioniextranato762mm
+      <br>
+      &nbsp;munizioninato762mmextra
+      <br>
+      <br>
+      <br>
+      <h4><b>EXTRA NATO 9 AMMO</b> <mono class="badge">PRESTIGE TYPE</mono></h4>
+      &nbsp;extranato9ammo
+      <br>
+      &nbsp;ammo9
+      <br>
+      &nbsp;ammo9mm
+      <br>
+      &nbsp;munizioni9
+      <br>
+      &nbsp;munizioni9mm
+      <br>
+      &nbsp;nato9
+      <br>
+      &nbsp;nato9mm
+      <br>
+      &nbsp;extrammo9
+      <br>
+      &nbsp;extraammo9mm
+      <br>
+      &nbsp;extraammonato9mm
+      <br>
+      &nbsp;munizioniextra9
+      <br>
+      &nbsp;munizioniextra9mm
+      <br>
+      &nbsp;munizioniextranato9mm
+      <br>
+      &nbsp;munizioninato9mmextra
+      <br>
+      <br>
+      <br>
+      <h4><b>EXTRA NATO 12 GAUGE</b> <mono class="badge">PRESTIGE TYPE</mono></h4>
+      &nbsp;extra12ammo
+      <br>
+      &nbsp;ammo12
+      <br>
+      &nbsp;ammo12gauge
+      <br>
+      &nbsp;munizioni12
+      <br>
+      &nbsp;munizionicalibro12
+      <br>
+      &nbsp;extrammo12
+      <br>
+      &nbsp;extraammo12gauge
+      <br>
+      &nbsp;munizioniextra12
+      <br>
+      &nbsp;munizioniextracalibro12
+      <br>
+      &nbsp;munizionicalibro12extra
+      <br>
+      &nbsp;calibro12
+      <br>
+      &nbsp;cal12
+      <br>
+      &nbsp;12gauge     
+      <br>
+      <br>
+      <br>
+      <h4><b>EXTRA NATO 44 AMMO</b> <mono class="badge">PRESTIGE TYPE</mono></h4>
+      &nbsp;extra44ammo
+      <br>
+      &nbsp;ammo44
+      <br>
+      &nbsp;ammo44cal
+      <br>
+      &nbsp;munizioni44
+      <br>
+      &nbsp;munizionicalibro44
+      <br>
+      &nbsp;extrammo44
+      <br>
+      &nbsp;extraammo44cal
+      <br>
+      &nbsp;extraammonato44cal
+      <br>
+      &nbsp;munizioniextra44
+      <br>
+      &nbsp;munizioniextracalibro44
+      <br>
+      &nbsp;munizioni44calextra
+      <br>
+      &nbsp;calibro44
+      <br>
+      &nbsp;cal44
+      <br>
+      &nbsp;44cal
+      <br>
+      <br>
+      <br>
+      <h4><b>EXTRA HUMAN (ARTIFICIAL) HP</b> <mono class="badge">PRESTIGE TYPE</mono></h4>
+      &nbsp;extrahumanhp
+      <br>
+      &nbsp;humanhp
+      <br>
+      &nbsp;humanhpextra
+      <br>
+      &nbsp;vitaextraumani
+      <br>
+      &nbsp;vitaumani
+      <br>
+      &nbsp;vitaumaniextra
+      <br>
+      &nbsp;extrahumanartificialhp
+      <br>
+      &nbsp;humanartificialhp
+      <br>
+      &nbsp;humanartificialhpextra
+      <br>
+      &nbsp;vitaartificialeextraumani
+      <br>
+      &nbsp;vitaartificialeumani
+      <br>
+      &nbsp;vitaartificialeumaniextra
+      <br>
+      <br>
+      <br>
+      <h4><b>EXTRA SCP HP</b> <mono class="badge">PRESTIGE TYPE</mono></h4>
+      &nbsp;extrascphp
+      <br>
+      &nbsp;scphp
+      <br>
+      &nbsp;scphpextra
+      <br>
+      &nbsp;vitaextrascp
+      <br>
+      &nbsp;vitascp
+      <br>
+      &nbsp;vitascpextra
+      <br>
+      <br>
+      <br>
+      <h4><b>ITEM TYPE</b> <mono class="badge">CUSTOM INVENTORY TYPE</mono></h4>
+      &nbsp;KeycardJanitor
+      <br>
+      &nbsp;KeycardScientist
+      <br>
+      &nbsp;KeycardResearchCoordinator
+      <br>
+      &nbsp;KeycardZoneManager
+      <br>
+      &nbsp;KeycardGuard
+      <br>
+      &nbsp;KeycardContainmentEngineer
+      <br>
+      &nbsp;KeycardNTFOfficer
+      <br>
+      &nbsp;KeycardNTFLieutenant
+      <br>
+      &nbsp;KeycardNTFCommander
+      <br>
+      &nbsp;KeycardFacilityManager
+      <br>
+      &nbsp;KeycardChaosInsurgency
+      <br>
+      &nbsp;KeycardO5
+      <br>
+      &nbsp;Radio
+      <br>
+      &nbsp;GunCOM15
+      <br>
+      &nbsp;Medkit
+      <br>
+      &nbsp;Flashlight
+      <br>
+      &nbsp;MicroHID
+      <br>
+      &nbsp;SCP500
+      <br>
+      &nbsp;SCP207
+      <br>
+      &nbsp;GunE11SR
+      <br>
+      &nbsp;Crossvec
+      <br>
+      &nbsp;GunFSP9
+      <br>
+      &nbsp;GunLogicer
+      <br>
+      &nbsp;GunShotgun
+      <br>
+      &nbsp;GunAK
+      <br>
+      &nbsp;GrenadeFrag
+      <br>
+      &nbsp;GrenadeFlash
+      <br>
+      &nbsp;GunCOM18
+      <br>
+      &nbsp;GunRevolver
+      <br>
+      &nbsp;SCP018
+      <br>
+      &nbsp;SCP268
+      <br>
+      &nbsp;Adrenaline
+      <br>
+      &nbsp;Painkillers
+      <br>
+      &nbsp;Coin
+      <br>
+      &nbsp;ArmorHeavy
+      <br>
+      &nbsp;ArmorCombat
+      <br>
+      &nbsp;ArmorLight
+      <br>
+      &nbsp;SCP330
+      <br>
+      &nbsp;SCP2176
+      <br>
+      &nbsp;SCP244a
+      <br>
+      &nbsp;SCP244b
+      <br>
+      &nbsp;SCP1853
+      <br>
+      &nbsp;ParticleDisruptor
+      <br>
+      <br>
+      <br>
+      <h4><b>ROLE TYPE</b> <mono class="badge">CUSTOM INVENTORY TYPE</mono></h4>
+      &nbsp;ClassD
+      <br>
+      &nbsp;Scientist
+      <br>
+      &nbsp;FacilityGuard
+      <br>
+      &nbsp;NtfSpecialist
+      <br>
+      &nbsp;NtfPrivate
+      <br>
+      &nbsp;NtfSergeant
+      <br>
+      &nbsp;NtfCaptain
+      <br>
+      &nbsp;ChaosConscript
+      <br>
+      &nbsp;ChaosMarauder
+      <br>
+      &nbsp;ChaosRepressor
+      <br>
+      &nbsp;ChaosRifleman
+      <br>
+      <br>
+      <br>
+      <h4><b>TEAM TYPE</b> <mono class="badge">CUSTOM INVENTORY TYPE</mono></h4>
+      &nbsp;SCP
+      <br>
+      &nbsp;MTF
+      <br>
+      &nbsp;CHI
+      <br>
+      &nbsp;RSC
+      <br>
+      &nbsp;CDP
+      <br>
+      &nbsp;RIP
+      <br>
+      &nbsp;TUT
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h4><b>COMMANDS</b></h4>
+      <br>
+      <b>STATISTICS</b>
+      <br>
+      &nbsp;.statistics
+      <br>
+      &nbsp;.stats
+      <br>
+      <br>
+      <b>LEADERBOARD</b>
+      <br>
+      &nbsp;.leaderboard
+      <br>
+      &nbsp;.lead
+      <br>
+      <br>
+      <b>PRESTIGE TAKE</b>
+      <br>
+      &nbsp;.prestige act
+      <br>
+      &nbsp;.prestigio attua
+      <br>
+      &nbsp;.pr execute
+      <br>
+      &nbsp;.p esegui
+      <br>
+      <br>
+      <b>PRESTIGE SPEND</b>
+      <br>
+      &nbsp;.prestige bonus redeem [PRESTIGE TYPE]
+      <br>
+      &nbsp;.prestigio bonus riscatta [PRESTIGE TYPE]
+      <br>
+      &nbsp;.pr bonus take [PRESTIGE TYPE]
+      <br>
+      &nbsp;.p bonus spend [PRESTIGE TYPE]
+    </div>
+  </div>
+</body>
