@@ -68,12 +68,6 @@ ul.a {
   top:0;
   right:0;
 }
-#profilo{
-  position: absolute;
-  z-index: 0;
-  top:-120px;
-  right:130px;
-}
 
 /*NAVBAR*/
 #navBar{
@@ -116,7 +110,7 @@ ul.a {
 #intestazione{
   position: absolute;
   z-index: 0;
-  top:400px;
+  top:360px;
   left:130px;
 }
 #title{
@@ -280,6 +274,51 @@ ul.a {
   z-index: -1;
   top:0;
   right:0;
+}
+#intestazione-staff{
+  position: absolute;
+  z-index: 0;
+  top:400px;
+  left:130px;
+}
+#title-staff{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color:#c50000;
+  font-size:28px;
+  line-height: 100%;
+  margin-top: -375px;
+}
+#subtitle-staff{
+  font-family: 'Open Sans', sans-serif;
+  color:#1272ae;
+  font-size:25px;
+}
+
+#intestazione-staff2{
+  position: absolute;
+  z-index: 0;
+  left:130px;
+}
+#title-staff2{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size:28px;
+  line-height: 100%;
+  margin-top: 8%;
+  color: #008080;
+}
+#subtitle-staff2{
+  font-family: 'Open Sans', sans-serif;
+  color:#9fafb1;
+  font-size:20px;
+}
+
+.danger {
+  background-color: #ffdddd;
+  border-left: 6px solid #f44336;
+  margin-bottom: 15px;
+  padding: 4px 12px;
 }
 
 .badge {
